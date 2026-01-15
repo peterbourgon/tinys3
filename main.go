@@ -54,7 +54,7 @@ func main() {
 	}
 
 	log.Printf("tinys3 serving %s on %s", *flagRoot, *flagAddr)
-	log.Printf("usage: aws --endpoint-url=URL s3 ls s3://")
+	log.Printf("usage: AWS_ACCESS_KEY_ID=none AWS_SECRET_ACCESS_KEY=none AWS_ENDPOINT_URL=<URL> aws s3 ls s3://")
 
 	log.Fatal(server.Serve(ln))
 }
